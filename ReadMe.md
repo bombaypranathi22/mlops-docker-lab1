@@ -1,5 +1,28 @@
-docker build -t lab1:v1 .
+# Docker Lab 1 – Wine Classification (Random Forest)
 
-docker save lab1:v1 > my_image.tar
+## Overview
+This lab demonstrates how to containerize a machine learning pipeline using Docker.  
+The model trains a Random Forest classifier on the Wine dataset from scikit-learn and evaluates its accuracy.
 
-docker run lab1:v1
+I modified the baseline implementation by tuning model hyperparameters and structuring the code into a reproducible Docker workflow.
+
+---
+
+## Project Structure
+
+Lab1/
+│── Dockerfile  
+│── ReadMe.md  
+│── src/  
+│   ├── main.py  
+│   ├── requirements.txt  
+
+---
+
+## Steps to Run the Lab
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/bombaypranathi22/mlops-docker-lab1.git
+cd mlops-docker-lab1/Labs/Docker_Labs/Lab1
+
